@@ -34,7 +34,7 @@ function playNextAni(pageChannel,isNext) {
     .set(page.find('.rAni'), { marginLeft: 60})
     .set(page.find('.roleAni'), { rotationY: 60 })
     .set(page.find('.roleRAni'), { rotationY: 60, transformOrigin: '120% 0%' })
-    .staggerTo(page.find('.content'), .8, { autoAlpha: 1, marginTop: 0, marginLeft: 0, rotationY: 0, ease: Back.easeOut }, .02)
+    .staggerTo(page.find('.content'), 1, { autoAlpha: 1, marginTop: 0, marginLeft: 0, rotationY: 0, ease: Power3.easeOut }, .05)
 
 }
 
