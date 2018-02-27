@@ -18,11 +18,13 @@ html,body
 	max-width: 640px
 	left: 50%
 	margin-left: -320px	
-	overflow: hidden
-
+	overflow: auto
 	.container
 		+fullPage
-
+		+dTime
+		&.bigSize 
+			+scale(2)
+			+transform-origin(0,0) 
 		.logo
 			+bg('logo.png')
 			top: 40px

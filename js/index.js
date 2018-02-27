@@ -116,7 +116,7 @@ function initPop() {
 }
 
 function initScale() {
-    $('.table').click(function (e) {
+    $('.scaleObject').click(function (e) {
         $('.container').toggleClass('bigSize');
     })
 }
