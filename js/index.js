@@ -115,15 +115,15 @@ function initPop() {
     })
 
 
-    $('.calendarPop .moblieBtnCheck').click(function(e){
-        var isSafari = !navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
-        if(!isSafari){
-            e.preventDefault();
-            alert('請用iphone的safari瀏覽器使用此功能')
-        }else{
+    // $('.calendarPop .moblieBtnCheck').click(function(e){
+    //     var isSafari = !navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
+    //     if(!isSafari){
+    //         e.preventDefault();
+    //         alert('請用iphone的safari瀏覽器使用此功能')
+    //     }else{
            
-        }
-    })
+    //     }
+    // })
 }
 
 function initScale() {
