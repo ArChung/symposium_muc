@@ -1,3 +1,13 @@
+@keyframes updownAni 
+	0%
+		margin-bottom: 10px
+	50%
+		margin-bottom: 0
+	100% 
+		margin-bottom: 10px
+
+=animationUpDown
+	+animation(updownAni 1s infinite)
 
 html,body 
 	width: 100%
@@ -11,7 +21,7 @@ html,body
 	top: 0
 	left: 0
 
-
+ 
 .bigContainer 
 
 	+fullPage
@@ -19,7 +29,20 @@ html,body
 	left: 50%
 	margin-left: -320px	
 	overflow: auto
-	.container
+	.container 
+		.footer
+			position: absolute
+			width: 100%
+			bottom: 0
+			height: 80px
+			background-color: white
+			// z-index: 3
+			.logo
+				+bg('logo.png')
+				height: 28px
+				position: absolute
+				right: 30px
+				top: 28px
 		+fullPage
 		+dTime
 		&.bigSize 
@@ -58,15 +81,12 @@ html,body
 					&:first-child
 						position: relative
 		.pageArr
-			background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNyA0NCI+PHBhdGggZD0iTTI3IDIydjBMNSA0NGwtMi4xLTIuMUwyMi44IDIyIDIuOSAyLjEgNSAwIDI3IDIydjB6IiBmaWxsPSIjZmZmIi8+PC9zdmc+)
+			+bg('arr.png')
 			position: absolute
 			bottom: 15px
 			left: 50%
 			margin-left: -30px 
-			width: 27px
-			height: 44px
-			+rotate(90deg)
-
+			+animationUpDown
 
 		
 		@for $i from 1 through 7
@@ -75,7 +95,7 @@ html,body
 				.wrap
 					@for $j from 1 through 10 
 						> .content:nth-child(#{$j})
-							+bg('p#{$i}_#{$j}.png')
+							+bg('p#{$i}.png')
 
 			// channel
 			&.channel_#{$i}	
@@ -133,25 +153,48 @@ html,body
 			+bg('cloz.png')
 
 
-
+ 
 // costom rule
 .bigContainer 
-	
 	.container
-		
 		.page.p1  
 			+bgi('bg1.jpg')
-		.page.p4 
+		.page.p2 
 			.calendarBtn
 				position: absolute
 				width: 220px
 				height: 140px
-				top: 40px	
-				left: 40px
-
+				top: 680px	
+				left: 10px
+				// border: 1px solid #000
+		.page.p3 
+			.calendarBtn
+				position: absolute
+				width: 220px
+				height: 140px
+				top: 680px	
+				left: 10px
+				// border: 1px solid #000
+		.page.p4
+			.calendarBtn
+				position: absolute
+				width: 220px
+				height: 140px
+				top: 680px	
+				left: 10px
+				// border: 1px solid #000
+			.googleMapBtn
+				position: absolute
+				width: 220px
+				height: 140px
+				top: 680px	
+				left: 300px
+				// border: 1px solid #000
 		.imintBtn
 			position: absolute
 			width: 160px
 			height: 140px
-			top: 540px
-			left: 60px
+			top: 690px
+			left: 10px
+			// border: 1px solid #000
+			
